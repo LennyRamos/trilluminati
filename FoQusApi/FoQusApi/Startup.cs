@@ -57,7 +57,7 @@ namespace FoQusApi
                 app.UseHsts();
             }
 
-            //app.UseCors(MyAllowSpecificOrigins);
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseHttpsRedirection();
             app.UseMvc();
